@@ -20,8 +20,8 @@ export default function AddIncidentScreen({ navigation }: { navigation: AddScree
       return;
     }
     addIncident({ title, category, location, description });
-    Alert.alert('Success', 'Incident reported successfully!');
-    navigation.goBack();
+    navigation.navigate('Success');
+    
   };
 
   return (

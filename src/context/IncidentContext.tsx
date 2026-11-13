@@ -10,22 +10,7 @@ interface IncidentContextData {
 export const IncidentContext = createContext<IncidentContextData>({} as IncidentContextData);
 
 const initialData: Incident[] = [
-  {
-    id: '1',
-    title: 'Broken Lights',
-    category: 'Electricity',
-    location: 'Building B, Hallway',
-    description: 'The lights are flickering and making noise.',
-    status: 'Pending',
-  },
-  {
-    id: '2',
-    title: 'No Internet',
-    category: 'Internet and Networks',
-    location: 'Main Library',
-    description: 'Cannot connect to student Wi-Fi.',
-    status: 'Resolved',
-  }
+  
 ];
 
 export const IncidentProvider = ({ children }: { children: ReactNode }) => {

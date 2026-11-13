@@ -14,4 +14,5 @@ export type RootStackParamList = {
   Home: undefined;
   AddIncident: undefined;
   Detail: { incidentId: string };
+  Success: undefined;
 };

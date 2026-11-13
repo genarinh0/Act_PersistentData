@@ -6,6 +6,7 @@ import HomeScreen from './src/screens/HomeScreen';
 import AddIncidentScreen from './src/screens/AddIncidentScreen';
 import DetailScreen from './src/screens/DetailScreen';
 import { RootStackParamList } from './src/types';
+import SuccessScreen from './src/screens/SuccessScreen';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
@@ -17,6 +18,7 @@ export default function App() {
           <Stack.Screen name="Home" component={HomeScreen} options={{ title: 'CampusReport' }} />
           <Stack.Screen name="AddIncident" component={AddIncidentScreen} options={{ title: 'Report Incident' }} />
           <Stack.Screen name="Detail" component={DetailScreen} options={{ title: 'Incident Details' }} />
+          <Stack.Screen name="Success" component={SuccessScreen} options={{ headerShown: false }} />
         </Stack.Navigator>
       </NavigationContainer>
     </IncidentProvider>
