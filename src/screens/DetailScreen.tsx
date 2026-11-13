@@ -57,5 +57,6 @@ const styles = StyleSheet.create({
   pending: { color: '#d9534f', fontWeight: 'bold' },
   resolved: { color: '#5cb85c', fontWeight: 'bold' },
   statusButton: { padding: 15, borderRadius: 8, alignItems: 'center' },
-  statusButtonText: { color: 'white', fontWeight: 'bold', fontSize: 16 }
+  statusButtonText: { color: 'white', fontWeight: 'bold', fontSize: 16 },
+  error: { fontSize: 18, color: 'red', textAlign: 'center', marginTop: 50 }
 });
